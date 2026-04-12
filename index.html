@@ -359,7 +359,7 @@
     }
     window.closeDr=function(){document.getElementById('mobDr').classList.remove('open');var o=document.getElementById('mobOv');o.style.opacity='0';o.style.pointerEvents='none'};
     window.scrollToId=function(id){var el=document.getElementById(id);if(el)smoothTo(el.getBoundingClientRect().top+window.scrollY,72)};
-    window.downloadResume=function(){var link=document.createElement('a');link.href='https://github.com/abrahamscariya';link.target='_blank';link.rel='noopener noreferrer';document.body.appendChild(link);link.click();document.body.removeChild(link)};
+    window.downloadResume=function(){var link=document.createElement('a');link.href='https://github.com/abrahamscariya/raw/main/Abraham_Scariya_Resume.pdf';link.target='_blank';link.rel='noopener noreferrer';document.body.appendChild(link);link.click();document.body.removeChild(link)};
     window.addEventListener('popstate',function(e){if(e.state&&e.state.page)showPage(e.state.page);else showPage('home')});
     try{var params=new URLSearchParams(window.location.search);var initP=params.get('p');if(initP&&document.getElementById('page-'+initP))setTimeout(function(){showPage(initP)},100)}catch(e){}
     var scrollTarget=null,scrollFrom=0,scrollT0=0,scrollDur=900;
